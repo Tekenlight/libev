@@ -18,8 +18,13 @@ if test -z "$orig_CFLAGS"; then
   fi
 fi
 
+AC_SUBST(libdir, "/usr/local/lib/evlua")
+AC_SUBST(includedir, "/usr/local/include/evlua")
+AC_SUBST(mandir, "/usr/local/share/man/evlua")
+
 AC_PROG_INSTALL
 AC_PROG_LIBTOOL
+
 
 m4_include([libev.m4])
 
