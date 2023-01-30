@@ -18,9 +18,12 @@ if test -z "$orig_CFLAGS"; then
   fi
 fi
 
-AC_SUBST(libdir, "/usr/local/lib/evlua")
-AC_SUBST(includedir, "/usr/local/include/evlua")
-AC_SUBST(mandir, "/usr/local/share/man/evlua")
+AC_SUBST(libdir, "$libdir/evpoco")
+AC_SUBST(bindir, "$bindir/evpoco")
+AC_SUBST(includedir, "$includedir/evpoco")
+AC_SUBST(mandir, "$mandir/evpoco")
+AC_SUBST(datadir, "$datadir/evpoco")
+AC_SUBST(htmldir, "$htmldir/evpoco")
 
 AC_PROG_INSTALL
 AC_PROG_LIBTOOL
