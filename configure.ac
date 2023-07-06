@@ -17,6 +17,7 @@ if test -z "$orig_CFLAGS"; then
     CFLAGS="-g -O3"
   fi
 fi
+CFLAGS=$CFLAGS" -fPIC"
 
 AC_SUBST(libdir, "$libdir/evpoco")
 AC_SUBST(bindir, "$bindir/evpoco")
